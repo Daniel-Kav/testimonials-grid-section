@@ -128,20 +128,40 @@ body {
   grid-area: five;
 }
 
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .attribution {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 24px rgba(31, 38, 135, 0.08);
+  border-radius: 16px;
+  padding: 1.2rem 2.5rem;
+  color: var(--darkblue);
   font-size: 1.6rem;
   text-align: center;
-  color: var(--darkblue);
-  margin: 14px 0;
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: box-shadow 0.3s;
 }
 
 .attribution a {
   color: var(--purple500);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .attribution a:hover,
 .attribution a:focus {
   color: var(--darkblue);
+  text-decoration: underline;
 }
 
 @media (min-width: 600px) {
